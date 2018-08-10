@@ -1,12 +1,11 @@
 
-
 import {Http} from '@angular/http';
 import {Injectable} from '@angular/core';
 
 
 @Injectable()
 export class UserService {
-    users = [
+   users = [
         {name: 'Card 1', description: 'lorem ipsum, bla bla bla'},
         {name: 'Card 2', description: 'return response.results'},
         {name: 'Card 3', description: 'lorem ipsum, bla bla bla'},

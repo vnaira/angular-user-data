@@ -8,14 +8,11 @@ import {UserService} from './user.service';
     providers: [UserService]
 })
 export class AppComponent implements OnInit {
-    users = [];
     title = 'user list';
 
     constructor(private us: UserService) {
         console.log('app runs');
     }
-
     ngOnInit() {
-        this.users = this.us.getUser();
     }
 }

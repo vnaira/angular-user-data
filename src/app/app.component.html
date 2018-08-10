@@ -1,11 +1,19 @@
 <div class="container">
-  <div class="row">
-      <app-user
-              *ngFor="let u of users"
-              [userList]=u
-      ></app-user>
-
-  </div>
+    <p>
+    Welcome {{ title }}
+    </p>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li> <a routerLink="/card"> Card</a></li>
+                <li><a routerLink="/users"> Users</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
-
+<div class="container">
+<router-outlet></router-outlet>
+</div>
 
